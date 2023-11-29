@@ -1,0 +1,5 @@
+C:\SelfEducation\Test\ForLearningEanglishWords\ForLearningEanglishWords\bin\Release\net6.0-windows\publish\ForLearningEanglishWords.exe
+C:\SelfEducation\Test\ForLearningEanglishWords\ForLearningEanglishWords\bin\Release\net6.0-windows\publish\ForLearningEanglishWords.dll
+C:\SelfEducation\Test\ForLearningEanglishWords\ForLearningEanglishWords\bin\Release\net6.0-windows\publish\ForLearningEanglishWords.deps.json
+C:\SelfEducation\Test\ForLearningEanglishWords\ForLearningEanglishWords\bin\Release\net6.0-windows\publish\ForLearningEanglishWords.runtimeconfig.json
+C:\SelfEducation\Test\ForLearningEanglishWords\ForLearningEanglishWords\bin\Release\net6.0-windows\publish\ForLearningEanglishWords.pdb

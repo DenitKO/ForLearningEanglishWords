@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ForLearningEnglishWords/1.0.0": {
+        "runtime": {
+          "ForLearningEnglishWords.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ForLearningEnglishWords/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
