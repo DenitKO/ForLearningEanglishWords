@@ -77,7 +77,7 @@
             btnOpen.Location = new Point(6, 79);
             btnOpen.Name = "btnOpen";
             btnOpen.Size = new Size(75, 23);
-            btnOpen.TabIndex = 0;
+            btnOpen.TabIndex = 1;
             btnOpen.Text = "Открыть";
             btnOpen.UseVisualStyleBackColor = true;
             btnOpen.Click += btnOpen_Click;
@@ -88,7 +88,7 @@
             btnSave.Location = new Point(140, 79);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(77, 23);
-            btnSave.TabIndex = 1;
+            btnSave.TabIndex = 9;
             btnSave.Text = "Сохранить";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
@@ -115,7 +115,7 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(1438, 389);
-            dataGridView1.TabIndex = 4;
+            dataGridView1.TabIndex = 16;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // Words
@@ -246,14 +246,14 @@
             dateTimePicker.MinDate = new DateTime(2022, 1, 1, 0, 0, 0, 0);
             dateTimePicker.Name = "dateTimePicker";
             dateTimePicker.Size = new Size(162, 23);
-            dateTimePicker.TabIndex = 10;
+            dateTimePicker.TabIndex = 5;
             // 
             // btnExit
             // 
             btnExit.Location = new Point(1273, 79);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(75, 23);
-            btnExit.TabIndex = 9;
+            btnExit.TabIndex = 15;
             btnExit.Text = "Выход";
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
@@ -322,7 +322,7 @@
             btnSaveAss.Location = new Point(267, 79);
             btnSaveAss.Name = "btnSaveAss";
             btnSaveAss.Size = new Size(100, 23);
-            btnSaveAss.TabIndex = 5;
+            btnSaveAss.TabIndex = 10;
             btnSaveAss.Text = "СохранитьКак";
             btnSaveAss.UseVisualStyleBackColor = true;
             btnSaveAss.Click += btnSaveAss_Click;
@@ -339,14 +339,14 @@
             tbAddTranscription.Location = new Point(276, 29);
             tbAddTranscription.Name = "tbAddTranscription";
             tbAddTranscription.Size = new Size(219, 23);
-            tbAddTranscription.TabIndex = 4;
+            tbAddTranscription.TabIndex = 3;
             // 
             // tbAddWord
             // 
             tbAddWord.Location = new Point(6, 29);
             tbAddWord.Name = "tbAddWord";
             tbAddWord.Size = new Size(238, 23);
-            tbAddWord.TabIndex = 4;
+            tbAddWord.TabIndex = 2;
             // 
             // btnRepeatMemorization
             // 
@@ -354,7 +354,7 @@
             btnRepeatMemorization.Location = new Point(720, 79);
             btnRepeatMemorization.Name = "btnRepeatMemorization";
             btnRepeatMemorization.Size = new Size(476, 23);
-            btnRepeatMemorization.TabIndex = 2;
+            btnRepeatMemorization.TabIndex = 12;
             btnRepeatMemorization.Text = "Повторить Запоминание";
             btnRepeatMemorization.UseVisualStyleBackColor = true;
             btnRepeatMemorization.Click += btnRepeatMemorization_Click;
@@ -364,7 +364,7 @@
             btnClearAll.Location = new Point(962, 54);
             btnClearAll.Name = "btnClearAll";
             btnClearAll.Size = new Size(93, 23);
-            btnClearAll.TabIndex = 2;
+            btnClearAll.TabIndex = 14;
             btnClearAll.Text = "Очистить всё";
             btnClearAll.UseVisualStyleBackColor = true;
             btnClearAll.Click += btnClearAll_Click;
@@ -374,7 +374,7 @@
             btnClearTb.Location = new Point(971, 29);
             btnClearTb.Name = "btnClearTb";
             btnClearTb.Size = new Size(75, 23);
-            btnClearTb.TabIndex = 2;
+            btnClearTb.TabIndex = 13;
             btnClearTb.Text = "Очистить";
             btnClearTb.UseVisualStyleBackColor = true;
             btnClearTb.Click += btnClearTb_Click;
@@ -384,7 +384,7 @@
             btnAdd.Location = new Point(1111, 29);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
-            btnAdd.TabIndex = 2;
+            btnAdd.TabIndex = 6;
             btnAdd.Text = "Добавить";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;

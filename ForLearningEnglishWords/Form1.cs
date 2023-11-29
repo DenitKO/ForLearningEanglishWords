@@ -8,7 +8,7 @@ namespace ForLearningEnglishWords
         string fileValidator = string.Empty;
         bool gridChanged = false;
         List<bool[]> checkedList = new List<bool[]>();
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +19,7 @@ namespace ForLearningEnglishWords
         {
             //dataGridView1.AllowUserToAddRows = false;
             openFileDialog1.Filter = "CSV files(*.csv)|*.csv";
-            // Предпологалось изспользоывть разные расширения, но пока оставлю только csv
+            //It was supposed to use different extensions, but for now I will leave only csv
             //openFileDialog1.Filter = "CSV files(*.csv)|*.csv|Text files(*.txt)|*.txt|All files(*.*)|*.*";
             dateTimePicker.Format = DateTimePickerFormat.Custom;
             dateTimePicker.CustomFormat = "MM/dd/yyyy HH:mm:ss";
@@ -124,9 +124,9 @@ namespace ForLearningEnglishWords
             {
                 for (int j = 3; j < dataGridView1.Columns.Count; j++)
                 {
-                    if ((DateTime)dataGridView1[j, i].Value < DateTime.Now && checkedList[i] [j-3])
+                    if ((DateTime)dataGridView1[j, i].Value < DateTime.Now && checkedList[i][j - 3])
                         dataGridView1[j, i].Style.BackColor = Color.Green;
-                    else if ((DateTime)dataGridView1[j, i].Value < DateTime.Now) 
+                    else if ((DateTime)dataGridView1[j, i].Value < DateTime.Now)
                         dataGridView1[j, i].Style.BackColor = Color.Red;
                     else
                         dataGridView1[j, i].Style.BackColor = Color.White;
@@ -136,7 +136,6 @@ namespace ForLearningEnglishWords
 
         private void iDeleted()
         {
-            // Удаляет все строки по выделенным ячейкам
             // Delete Rows By Selected Cells
             foreach (DataGridViewCell cell in dataGridView1.SelectedCells)
             {
@@ -168,6 +167,7 @@ namespace ForLearningEnglishWords
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            // TODO: make a function that will check and correct the validator file, according to the date
             dataGridView1[0, dataGridView1.CurrentCell.RowIndex].Value = tbAddWord.Text;
             dataGridView1[1, dataGridView1.CurrentCell.RowIndex].Value = tbAddTranscription.Text;
             dataGridView1[2, dataGridView1.CurrentCell.RowIndex].Value = tbComment.Text;
@@ -190,7 +190,8 @@ namespace ForLearningEnglishWords
                     {
                         checkedList[i][j] = true;
                         j++;
-                    } else break;
+                    }
+                    else break;
                 }
                 i++;
             }
@@ -296,7 +297,7 @@ namespace ForLearningEnglishWords
 
         private void iFillDataGridFromFileAndClearGrid()
         {
-            //Присвоение пути двум файлам, файл для Валидации проверки слов, и сам файл со словами
+            //Assigning a path to two files, a file for Validating word validation, and the file itself with words
             filePath = openFileDialog1.FileName;
             fileValidator = filePath.Remove(filePath.Length - 4);
             fileValidator = fileValidator + "Validator.csv";
